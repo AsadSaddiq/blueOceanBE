@@ -12,12 +12,9 @@
     {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
-      "config": { "distDir": "static" }
+      "config": { "distDir": "staticfiles_build" }
     }
   ],
-  "env": {
-    "DJANGO_SETTINGS_MODULE": "blueOcean.settings.base"
-  },
   "routes": [
     {
       "src": "/static/(.*)",
