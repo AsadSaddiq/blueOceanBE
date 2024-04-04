@@ -15,6 +15,9 @@
       "config": { "distDir": "static" }
     }
   ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "blueOcean.settings.base"
+  },
   "routes": [
     {
       "src": "/static/(.*)",
