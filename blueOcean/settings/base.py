@@ -112,7 +112,6 @@ MEDIA_URL = '/media/'  # Corrected from MEDIA_URLS
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'staticfiles_build', 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-os.makedirs(STATIC_ROOT, exist_ok=True)
 
 
 # Ensure the staticfiles_build/static directory exists
