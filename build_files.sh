@@ -2,7 +2,6 @@
  /usr/bin/python3.9 -m ensurepip
  /usr/bin/python3.9 --version
  /usr/bin/python3.9 -m pip --version
- sudo apt-get install libpq-dev
  pip install psycopg2==2.9.5
  pip install psycopg2-binary==2.9.5
  pip install django
