@@ -3,7 +3,7 @@ from datetime import timedelta
 import os
 from .djoser import *
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'django-insecure-c&10egy1m_g$-di00!ufgaguw5^-ru$!8x!nz0ov!wuv39uc1q'
 
@@ -109,7 +109,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles_build'),
 ]
 
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
+
 
 # MEDIA_ROOT = BASE_DIR / "media/"
 
